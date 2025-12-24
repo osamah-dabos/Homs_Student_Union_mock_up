@@ -1,54 +1,130 @@
-# React + TypeScript + Vite
+# Homs_Student_Union_mock_up
+# Ittehad Homs - تطبيق الاتحاد (حمص)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[English Version](#english) | [النسخة العربية](#arabic)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<a name="english"></a>
+## 🇬🇧 English Version
 
-## Expanding the ESLint configuration
+### 📝 Description
+**Ittehad Homs** is a modern web application designed for the National Union of Syrian Students (or similar federation) in Homs. It provides a comprehensive platform to manage and display members, colleges, achievements, and warnings. The application features a robust admin dashboard and a user-friendly public website.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### ✨ Key Features
+- **Multilingual Support**: Full support for Arabic (RTL) and English (LTR) using `i18next`.
+- **Member Management**: Add, view, and track current and previous members.
+- **Academic Integration**: Manage colleges and departments.
+- **Achievement Tracking**: Showcase and manage organizational achievements.
+- **Warning System**: Manage and display disciplinary warnings or notices.
+- **Responsive Design**: Optimized for all devices (Desktop, Tablet, Mobile).
+- **Modern UI/UX**: Built with Framer Motion for smooth transitions and a premium feel.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 🚀 Tech Stack
+- **Framework**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **State Management**: [Jotai](https://jotai.org/)
+- **Data Fetching**: [TanStack Query (React Query)](https://tanstack.com/query/latest)
+- **Routing**: [React Router](https://reactrouter.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Styling**: Vanilla CSS / Tailwind CSS
+- **Internationalization**: [i18next](https://www.i18next.com/)
+- **Toasts**: [Sonner](https://sonner.emilkowal.ski/)
+- **URL State**: [nuqs](https://nuqs.47ng.com/)
+
+### 🛠️ Getting Started
+
+#### Prerequisites
+- Node.js (Latest LTS recommended)
+- npm / pnpm / yarn
+
+#### Installation
+```bash
+# Clone the repository
+git clone <repository-url>
+
+# Navigate to the project directory
+cd Ittehad-Homs
+
+# Install dependencies
+pnpm install
+# or
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### Development
+```bash
+pnpm run dev
+# or
+npm run dev
+```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+#### Build
+```bash
+pnpm run build
+# or
+npm run build
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+---
+
+<a name="arabic"></a>
+## 🇸🇾 النسخة العربية (Arabic Version)
+
+### 📝 الوصف
+**تطبيق الاتحاد - حمص** هو منصة ويب حديثة مصممة للاتحاد الوطني لطلبة سوريا (أو اتحاد مشابه) في مدينة حمص. يوفر التطبيق نظاماً متكاملاً لإدارة وعرض بيانات الأعضاء، الكليات، الإنجازات، والإنذارات. يتضمن التطبيق لوحة تحكم للمسؤولين وواجهة عامة للمستخدمين.
+
+### ✨ المميزات الرئيسية
+- **دعم لغات متعددة**: دعم كامل للغتين العربية (RTL) والإنجليزية (LTR) باستخدام `i18next`.
+- **إدارة الأعضاء**: إضافة وعرض ومتابعة الأعضاء الحاليين والسابقين.
+- **التكامل الأكاديمي**: إدارة الكليات والأقسام التابعة لها.
+- **تتبع الإنجازات**: عرض وإدارة إنجازات الاتحاد.
+- **نظام الإنذارات**: إدارة وعرض التنبيهات والإنذارات.
+- **تصميم متجاوب**: متوافق مع جميع الشاشات (كمبيوتر، تابلت، موبايل).
+- **واجهة مستخدم عصرية**: استخدام Framer Motion لضمان سلاسة الحركات وتجربة مستخدم مميزة.
+
+### 🚀 التقنيات المستخدمة
+- **الإطار البرمجي**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **اللغة**: [TypeScript](https://www.typescriptlang.org/)
+- **إدارة الحالة**: [Jotai](https://jotai.org/)
+- **جلب البيانات**: [TanStack Query (React Query)](https://tanstack.com/query/latest)
+- **التوجيه**: [React Router](https://reactrouter.com/)
+- **التحريك**: [Framer Motion](https://www.framer.com/motion/)
+- **التنسيق**: Vanilla CSS / Tailwind CSS
+- **الترجمة**: [i18next](https://www.i18next.com/)
+- **التنبيهات**: [Sonner](https://sonner.emilkowal.ski/)
+- **إدارة حالة الروابط**: [nuqs](https://nuqs.47ng.com/)
+
+### 🛠️ البدء بالعمل
+
+#### المتطلبات
+- Node.js (يفضل أحدث نسخة LTS)
+- npm / pnpm / yarn
+
+#### التثبيت
+```bash
+# استنساخ المستودع
+git clone <repository-url>
+
+# الدخول إلى مجلد المشروع
+cd Ittehad-Homs
+
+# تثبيت المكتبات
+pnpm install
+# أو
+npm install
+```
+
+#### التشغيل (تطوير)
+```bash
+pnpm run dev
+# أو
+npm run dev
+```
+
+#### بناء المشروع (الإنتاج)
+```bash
+pnpm run build
+# أو
+npm run build
 ```
